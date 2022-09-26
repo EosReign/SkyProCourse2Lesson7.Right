@@ -1,16 +1,19 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> words = new HashSet<>();
-        words.add("Mashroom");
-        words.add("Mashroom");
-        words.add("Mashroom2");
-        words.add("Mashroom3");
-        words.add("Mashroom2");
-        System.out.println(words);
+        List<String> words = new ArrayList<>(List.of("mashroom", "stone", "rock", "pickaxe", "mashroom", "ore", "dig it" ));
+        for (int i = 0; i < words.size(); i++) {
+            int countWord = 0;
+            for (int I = i; I < words.size(); I++) {
+                if (words.get(i) == words.get(I)) {
+                    countWord++;
+                }
+            }
+            if (countWord != 1) {
+                System.out.println(words.get(i) + " : " + countWord);
+            }
+        }
     }
+
 }

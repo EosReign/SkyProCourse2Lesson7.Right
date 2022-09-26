@@ -1,16 +1,17 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ThirdTask {
     public static void thirdTask(String[] args) {
-        List<Integer> nums = new ArrayList<>(List.of(1, 1, 2, 3, 4, 4, 5, 5, 6, 7));
-        for (int i = 0; i < nums.size(); i++) {
-            if (nums.get(i) % 2 == 0) {
-                if (nums.get(i - 1) == nums.get(i)) {
-                    nums.remove(i - 1);
-                }
-                System.out.print(nums.get(i) + " ");
-            }
-        }
+        Set<String> words = new HashSet<>();
+        words.add("Mashroom");
+        words.add("Mashroom");
+        words.add("Mashroom2");
+        words.add("Mashroom3");
+        words.add("Mashroom2");
+        System.out.println(words);
     }
 }
+
