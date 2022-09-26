@@ -14,4 +14,5 @@ public class ThirdTask {
         System.out.println(words);
     }
 }
+//..
 

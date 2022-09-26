@@ -18,7 +18,6 @@ public class FirstTask {
                 System.out.print(nums.get(i) + " ");;
             }
         }
-
-
     }
 }
+//..
